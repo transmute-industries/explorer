@@ -1,7 +1,7 @@
 # Created by https://www.gitignore.io/api/bower,node,osx,webstorm
 
 ### Bower ###
-app/bower_components
+# app/bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
