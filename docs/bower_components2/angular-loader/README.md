@@ -1,7 +1,7 @@
-# packaged angular-mocks
+# packaged angular-loader
 
 This repo is for distribution on `npm` and `bower`. The source for this module is in the
-[main AngularJS repo](https://github.com/angular/angular.js/tree/master/src/ngMock).
+[main AngularJS repo](https://github.com/angular/angular.js/blob/master/src/loader.js).
 Please file issues and pull requests against that repo.
 
 ## Install
@@ -11,32 +11,34 @@ You can install this package either with `npm` or with `bower`.
 ### npm
 
 ```shell
-npm install angular-mocks
+npm install angular-loader
 ```
 
-You can `require` ngMock modules:
+Add a `<script>` to your `index.html`:
 
-```js
-var angular = require('angular');
-angular.module('myMod', [
-  require('angular-animate'),
-  require('angular-mocks/ngMock'),
-  require('angular-mocks/ngAnimateMock')
-]);
+```html
+<script src="/node_modules/angular-loader/angular-loader.js"></script>
 ```
+
+Note that this package is not in CommonJS format, so doing `require('angular-loader')` will
+return `undefined`.
 
 ### bower
 
 ```shell
-bower install angular-mocks
+bower install angular-loader
 ```
 
-The mocks are then available at `bower_components/angular-mocks/angular-mocks.js`.
+Add a `<script>` to your `index.html`:
+
+```html
+<script src="/bower_components2/angular-loader/angular-loader.js"></script>
+```
 
 ## Documentation
 
 Documentation is available on the
-[AngularJS docs site](https://docs.angularjs.org/guide/unit-testing).
+[AngularJS docs site](http://docs.angularjs.org/guide/bootstrap).
 
 ## License
 

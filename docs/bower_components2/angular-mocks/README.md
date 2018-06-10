@@ -1,7 +1,7 @@
-# packaged angular-route
+# packaged angular-mocks
 
 This repo is for distribution on `npm` and `bower`. The source for this module is in the
-[main AngularJS repo](https://github.com/angular/angular.js/tree/master/src/ngRoute).
+[main AngularJS repo](https://github.com/angular/angular.js/tree/master/src/ngMock).
 Please file issues and pull requests against that repo.
 
 ## Install
@@ -11,37 +11,32 @@ You can install this package either with `npm` or with `bower`.
 ### npm
 
 ```shell
-npm install angular-route
+npm install angular-mocks
 ```
 
-Then add `ngRoute` as a dependency for your app:
+You can `require` ngMock modules:
 
-```javascript
-angular.module('myApp', [require('angular-route')]);
+```js
+var angular = require('angular');
+angular.module('myMod', [
+  require('angular-animate'),
+  require('angular-mocks/ngMock'),
+  require('angular-mocks/ngAnimateMock')
+]);
 ```
 
 ### bower
 
 ```shell
-bower install angular-route
+bower install angular-mocks
 ```
 
-Add a `<script>` to your `index.html`:
-
-```html
-<script src="/bower_components/angular-route/angular-route.js"></script>
-```
-
-Then add `ngRoute` as a dependency for your app:
-
-```javascript
-angular.module('myApp', ['ngRoute']);
-```
+The mocks are then available at `bower_components2/angular-mocks/angular-mocks.js`.
 
 ## Documentation
 
 Documentation is available on the
-[AngularJS docs site](http://docs.angularjs.org/api/ngRoute).
+[AngularJS docs site](https://docs.angularjs.org/guide/unit-testing).
 
 ## License
 

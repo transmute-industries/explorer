@@ -51,7 +51,7 @@ require.config({
     packages: [
         {
             name: 'crypto-js',
-            location: 'path-to/bower_components/crypto-js',
+            location: 'path-to/bower_components2/crypto-js',
             main: 'index'
         }
     ]
@@ -68,7 +68,7 @@ Including all libraries, for access to extra methods:
 // Above-mentioned will work or use this simple form
 require.config({
     paths: {
-        'crypto-js': 'path-to/bower_components/crypto-js/crypto-js'
+        'crypto-js': 'path-to/bower_components2/crypto-js/crypto-js'
     }
 });
 
@@ -80,7 +80,7 @@ require(["crypto-js"], function (CryptoJS) {
 ### Usage without RequireJS
 
 ```html
-<script type="text/javascript" src="path-to/bower_components/crypto-js/crypto-js.js"></script>
+<script type="text/javascript" src="path-to/bower_components2/crypto-js/crypto-js.js"></script>
 <script type="text/javascript">
     var encrypted = CryptoJS.AES(...);
     var encrypted = CryptoJS.SHA256(...);
